@@ -32,29 +32,19 @@ function User() {
         setReputation(updatedScore);
     };
 
-    return ( <
-        div >
-        <
-        h2 > User Profile < /h2> <
-        input type = "text"
+    return ( <div>
+        <h2> User Profile < /h2> 
+        <input type = "text"
         placeholder = "Enter your username"
-        value = {
-            username
-        }
+        value = {username}
         onChange = {
             (e) => setUsername(e.target.value)
         }
-        /> <
-        button onClick = {
-            createProfile
-        } > Create Profile < /button> <
-        h3 > Reputation: {
-            reputation
-        } < /h3> <
-        button onClick = {
-            increaseUserReputation
-        } > Increase Reputation < /button> <
-        /div>
+        /> 
+        <button onClick = {createProfile} > Create Profile < /button> 
+            <h3> Reputation: {reputation} </h3> 
+            <button onClick = {increaseUserReputation}> Increase Reputation </button> 
+            </div>
     );
 }
 
